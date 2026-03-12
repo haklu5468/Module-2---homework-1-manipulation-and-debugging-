@@ -4,10 +4,11 @@
     // 2. Grab references to all moles
     const moles = document.getElementsByClassName("mole");
 
+
     // 3. Function to show one random mole at a time
     function showRandomMole() {
       // Hide all moles first
-      for (let i = 0; i < moles.lenght; i++) {
+      for (let i = 0; i < moles.length; i++) { //---endrer fra lenght til length
         moles[i].style.display = "none";
       }
 
