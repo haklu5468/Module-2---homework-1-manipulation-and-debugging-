@@ -2,12 +2,12 @@
     let score = 0;
 
     // 2. Grab references to all moles
-    const moles = document.getElementsByClassName("moles");
+    const moles = document.getElementsByClassName("mole");
 
     // 3. Function to show one random mole at a time
     function showRandomMole() {
       // Hide all moles first
-      for (let i = 0; i < moles.length; i++) {
+      for (let i = 0; i < moles.lenght; i++) {
         moles[i].style.display = "none";
       }
 
@@ -19,7 +19,7 @@
     // 4. Function to "whack" a mole
     function whackMole() {
       // Increase the score
-      scor += 1; 
+      score += 1; 
       document.getElementById("score").innerText = score;
       
       // Hide the mole you just hit
