@@ -37,10 +37,11 @@ function addTask(){
 
 
 function sortTasks(){
+    //sorterer tasks etter dato
 }
 
 function showTasks(){
-
+    //oppdaterer det brukerern ser
 }
 
 
@@ -98,7 +99,13 @@ function createTaskElement(task) {
 }
 
 function deleteTask(id) {
-//skal fikse her og
+    for (let i = 0; i < tasks.length; i++) {
+        if (tasks[i].id === id) {
+            tasks.splice(i,1); //fjerner akuratt den med riktig id
+
+            break; //bryter ut av løkka
+        }
+    }
 
     showTasks();
 }
