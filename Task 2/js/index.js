@@ -41,6 +41,14 @@ function sortTasks(){
 }
 
 function showTasks(){
+    taskList.innerHTML="";
+
+    sortTasks();
+
+    for (let i=0; i<tasks.length; i++){
+        const taskElement=createTaskElement(tasks[i]);
+        taskList.appendChild(taskElement);
+    }
     //oppdaterer det brukerern ser
 }
 
