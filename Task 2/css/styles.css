@@ -6,7 +6,7 @@ body {
 
 .todo-app {
     width: 400px;
-    border: #ccc;
+    border: 1px solid#ccc;
     padding: 20px;
     border-radius: 8px;
 }
