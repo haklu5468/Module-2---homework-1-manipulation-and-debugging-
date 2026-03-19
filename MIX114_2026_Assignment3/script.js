@@ -28,13 +28,14 @@
     }
 
     // 5. Function to start the game
+    let gameInterval = null;
+
     function startGame() {
       // Reset score
       score = 0;
       document.getElementById("score").innerText = score;
-
-      // Show a random mole every second
-      setInterval(showRandomMole, 1000);
+      if (gameInterval) clearInterval(gameInterval);
+      gameInterval = setInterval(showRandomMole, 1000)
     }
 
     // 6. Attach click event to each mole
