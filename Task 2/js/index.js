@@ -98,7 +98,7 @@ function createTaskElement(task) {
 
   if (task.dueDate) {
     const dueDateSpan = document.createElement("span");
-    dueDateSpan.textContent = "Due: " + task.dueDate;
+    dueDateSpan.textContent = " Due: " + task.dueDate;
     leftSpan.appendChild(dueDateSpan);
   }
 
